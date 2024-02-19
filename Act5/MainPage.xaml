@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Act5.MainPage"
+             Shell.BackgroundColor="#6F64E7"
+             Shell.TitleColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Grid RowSpacing="20" Margin="0, 30, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Label Grid.Column="0" Grid.Row="0" Text="$6,391 Hasbro Star Wars Sable de luz" BackgroundColor="#F6F3FF" FontSize="Default" VerticalTextAlignment="Center"/>
+                <Switch Grid.Column="1" Grid.Row="0" BackgroundColor="#F6F3FF" Toggled="Starwars_Toggled"/>
+
+                <Label Grid.Column="0" Grid.Row="1" Text="$126 USB Data Traveler 64GB" BackgroundColor="#F6F3FF" FontSize="Default" VerticalTextAlignment="Center"/>
+                <Switch Grid.Column="1" Grid.Row="1" BackgroundColor="#F6F3FF" Toggled="Usb_Toggled"/>
+
+                <Label Grid.Column="0" Grid.Row="2" Text="$503 Teclado Mecanico Gaming 60%" BackgroundColor="#F6F3FF" FontSize="Default" VerticalTextAlignment="Center"/>
+                <Switch Grid.Column="1" Grid.Row="2" BackgroundColor="#F6F3FF" Toggled="Teclado_Toggled"/>
+
+                <Label Grid.Column="0" Grid.Row="3" Text="$4,859 Tarjeta Grfica Nvidia RTX 3050" BackgroundColor="#F6F3FF" FontSize="Default" VerticalTextAlignment="Center"/>
+                <Switch Grid.Column="1" Grid.Row="3" BackgroundColor="#F6F3FF" Toggled="Gpu_Toggled"/>
+
+                <Label Grid.Column="0" Grid.Row="4" Text="$2,981 Monitor ASUS 15.6 pulgadas" BackgroundColor="#F6F3FF" FontSize="Default" VerticalTextAlignment="Center"/>
+                <Switch Grid.Column="1" Grid.Row="4" BackgroundColor="#F6F3FF" Toggled="Monitor_Toggled"/>
+
+                <Button Grid.Row="5" Text="Validar" BackgroundColor="#6F64E7" TextColor="White" x:Name="button" Clicked="button_Clicked"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
